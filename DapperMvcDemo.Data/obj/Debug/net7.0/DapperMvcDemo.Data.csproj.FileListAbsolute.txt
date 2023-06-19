@@ -1,0 +1,12 @@
+C:\Users\SAILS-DM318\source\repos\DapperMvcDemo\DapperMvcDemo.Data\bin\Debug\net7.0\DapperMvcDemo.Data.deps.json
+C:\Users\SAILS-DM318\source\repos\DapperMvcDemo\DapperMvcDemo.Data\bin\Debug\net7.0\DapperMvcDemo.Data.dll
+C:\Users\SAILS-DM318\source\repos\DapperMvcDemo\DapperMvcDemo.Data\bin\Debug\net7.0\DapperMvcDemo.Data.pdb
+C:\Users\SAILS-DM318\source\repos\DapperMvcDemo\DapperMvcDemo.Data\obj\Debug\net7.0\DapperMvcDemo.Data.csproj.AssemblyReference.cache
+C:\Users\SAILS-DM318\source\repos\DapperMvcDemo\DapperMvcDemo.Data\obj\Debug\net7.0\DapperMvcDemo.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SAILS-DM318\source\repos\DapperMvcDemo\DapperMvcDemo.Data\obj\Debug\net7.0\DapperMvcDemo.Data.AssemblyInfoInputs.cache
+C:\Users\SAILS-DM318\source\repos\DapperMvcDemo\DapperMvcDemo.Data\obj\Debug\net7.0\DapperMvcDemo.Data.AssemblyInfo.cs
+C:\Users\SAILS-DM318\source\repos\DapperMvcDemo\DapperMvcDemo.Data\obj\Debug\net7.0\DapperMvcDemo.Data.csproj.CoreCompileInputs.cache
+C:\Users\SAILS-DM318\source\repos\DapperMvcDemo\DapperMvcDemo.Data\obj\Debug\net7.0\DapperMvcDemo.Data.dll
+C:\Users\SAILS-DM318\source\repos\DapperMvcDemo\DapperMvcDemo.Data\obj\Debug\net7.0\refint\DapperMvcDemo.Data.dll
+C:\Users\SAILS-DM318\source\repos\DapperMvcDemo\DapperMvcDemo.Data\obj\Debug\net7.0\DapperMvcDemo.Data.pdb
+C:\Users\SAILS-DM318\source\repos\DapperMvcDemo\DapperMvcDemo.Data\obj\Debug\net7.0\ref\DapperMvcDemo.Data.dll
