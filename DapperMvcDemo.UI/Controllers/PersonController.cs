@@ -1,4 +1,5 @@
 ﻿using DapperMvcDemo.Data.Models.Domain;
+using DapperMvcDemo.Data.Models;
 using DapperMvcDemo.Data.Repository;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,11 +8,14 @@ namespace DapperMvcDemo.UI.Controllers
     public class PersonController : Controller
     {
         private readonly IPersonRepository _personRepo;
+       
 
         public PersonController(IPersonRepository personRepo)
         {
             _personRepo = personRepo;
         }
+
+        
 
         public async Task<IActionResult> Add()
         {
@@ -23,12 +27,13 @@ namespace DapperMvcDemo.UI.Controllers
         {
             try
             {
-                ViewBag.Message = "Start";
+                 
                 if (!ModelState.IsValid)
                     return View(person);
                 bool addPersonResult = await _personRepo.AddAsync(person);
                 if (addPersonResult)
                 {
+                   
                     TempData["msg"] = "Successfully added";
                     
                 }
@@ -45,8 +50,9 @@ namespace DapperMvcDemo.UI.Controllers
 
         public async Task<IActionResult> Edit(int id)
         {
+            ViewData["Message"] = "Update Person";
             var person = await _personRepo.GetByIdAsync(id);
-        
+    
             return View(person);
         }
 
@@ -71,15 +77,45 @@ namespace DapperMvcDemo.UI.Controllers
             return View(person);
         }
 
-
-
-
-
         public async Task<IActionResult> DisplayAll()
         {
+            ViewBag.Msg = "People list";
             var people = await _personRepo.GetAllAsync();
+            
             return View(people);
         }
+
+        //public async Task<IActionResult> Displaybasic()
+        //{
+           
+           
+        //    var people = await _personRepo.GetbasicAsync();
+        //    TempData["basic"]=people.ToList();
+        //    return View();
+        //}
+
+
+        public async Task<IActionResult> BasicView()
+        {
+            List<viewmodelclass> ne= new List<viewmodelclass>();
+
+            ne = (List<viewmodelclass>)await _personRepo.GetbasicAsync();
+            TempData["basic"] = ne;
+            return View();
+        }
+
+        //public IActionResult BasicView()
+        //{
+        //    var basicData = TempData["basic"] as List<viewmodelclass>; 
+
+        //    return View(basicData);
+        //}
+
+        
+
+
+       
+
 
         public async Task<IActionResult> Delete(int id)
         {

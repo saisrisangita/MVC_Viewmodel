@@ -4,10 +4,12 @@
 
 }
 
-<h3>People list</h3>
+
+<h3>@ViewBag.Msg</h3>
 
 <div class="my-2">
     <a href="/Person/Add" class="btn btn-info my-2">Add more</a>
+    <hr />
 
     <table class="table table-striped">
         <thead>
@@ -30,7 +32,7 @@
                         <a href="/Person/Delete?id=@person.Id" onclick="return window.confirm('Arey you sure to delete this record?')"   class="btn btn-danger">Delete</a>
                     </td>
                 </tr>
-             }
+             
             }
         </tbody>
     </table>

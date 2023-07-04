@@ -1,4 +1,5 @@
-﻿using DapperMvcDemo.Data.Models.Domain;
+﻿using DapperMvcDemo.Data.Models;
+using DapperMvcDemo.Data.Models.Domain;
 
 namespace DapperMvcDemo.Data.Repository
 {
@@ -9,5 +10,6 @@ namespace DapperMvcDemo.Data.Repository
         Task<bool> DeleteAsync(int id);
         Task<Person?> GetByIdAsync(int id);
         Task<IEnumerable<Person>> GetAllAsync();
+        Task<IEnumerable<viewmodelclass>> GetbasicAsync();
     }
 }

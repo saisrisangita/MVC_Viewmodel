@@ -1,4 +1,5 @@
 ﻿using DapperMvcDemo.Data.DataAccess;
+using DapperMvcDemo.Data.Models;
 using DapperMvcDemo.Data.Models.Domain;
 
 namespace DapperMvcDemo.Data.Repository;
@@ -64,7 +65,12 @@ public class PersonRepository : IPersonRepository
         return await _db.GetData<Person, dynamic>(query, new { });
     }
 
-
+    public async Task<IEnumerable<viewmodelclass>> GetbasicAsync()
+    {
+        
+        string query = "sp_get_people";
+        return await _db.GetData<viewmodelclass, dynamic>(query, new { });
+    }
 
 
 }

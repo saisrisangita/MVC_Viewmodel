@@ -1,0 +1,32 @@
+﻿@*@model IEnumerable<DapperMvcDemo.Data.Models.viewmodelclass>*@
+@{
+    var basicData = TempData["basic"] as List<DapperMvcDemo.Data.Models.viewmodelclass>;
+}
+
+
+
+
+
+
+
+<h2>Basic Data</h2>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+     
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var person in basicData)
+    {
+        <tr>
+            <td>@person.Id</td>
+            <td>@person.Name</td>
+            
+        </tr>
+    }
+    </tbody>
+</table>

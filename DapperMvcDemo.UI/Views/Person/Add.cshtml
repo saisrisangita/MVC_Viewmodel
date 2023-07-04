@@ -1,13 +1,11 @@
 ﻿@model Person
 
-@{
 
-}
 
-<h3>Add Person</h3>
-<h1>@ViewBag.Message</h1>
+
 
 <a href="/Person/DisplayAll" class="my-2 btn btn-primary">Display All</a>
+
 
 <form asp-action="Add">
 
@@ -38,12 +36,14 @@
     {
         <div class="mb-3">
            @TempData["msg"]
+         
             
         </div>
     }
     
     <div class="mb-3">
         <button type="submit" class="btn btn-primary">Save</button>
+       
     </div>
-
+   
 </form>
